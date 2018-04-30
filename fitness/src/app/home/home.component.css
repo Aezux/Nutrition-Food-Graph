@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h1 {
+  color: #EB6841;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.header {
+    height: 600px;
+    background: url(http://peak24.com.au/wp-content/uploads/2015/03/dark-backgrounds-15-cool-hd-background-and-wallpaper.jpg);
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.header p {
+    color: #5AAE9C;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+.header button {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.column {
+    padding: 50px;
+    height: 400px;
+}
+
+.column.left {
+  background: url(http://dailycaller.com/wp-content/uploads/2017/07/rsz_shutterstock_553502650-e1500297125933.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.column.center {
+  background: url(https://www.scitotalfitness.com/wp-content/uploads/2012/05/1274237020_55.jpg);
+  background-repeat: no-repeat;
+  background-position: 44% 60%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.column.right {
+  background: url(https://xbrl.us/wp-content/uploads/2015/04/EDU-apple-books.jpg);
+  background-repeat: no-repeat;
+  background-position: 37% 65%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  top: 8px;
+  left: 16px;
+}
+
+.text-wrapper p {
+  font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
