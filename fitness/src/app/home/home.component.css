@@ -17,7 +17,8 @@ h1 {
 
 .header {
     height: 600px;
-    background: url(http://peak24.com.au/wp-content/uploads/2015/03/dark-backgrounds-15-cool-hd-background-and-wallpaper.jpg);
+    background: url(https://wallpapertag.com/wallpaper/full/d/9/0/290410-black-backgrounds-1920x1200-720p.jpg);
+    background-repeat: no-repeat;
     padding: 30px;
     text-align: center;
     font-size: 60px;
@@ -80,6 +81,52 @@ h1 {
 
 .text-wrapper p {
   font-size: 22px;
+}
+
+button {
+	position: relative;
+	float: none !important;
+	display: block;
+	padding: 13px 27px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #5AAE9C;
+	background: transparent;
+	box-shadow: 1px 1px 3px #9E379F;
+	border: 2px solid #F5845E;
+	border-radius: 12px;
+	transform: translate(0%, 0%);
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	cursor: pointer;
+}
+
+button:active {
+	top: 3px;
+}
+
+button:hover {
+	color: #FFFFFF;
+}
+
+button:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+
+button:before {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	background: #5AAE9C;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	border-radius: 8px;
 }
 
 @media (max-width: 600px) {

@@ -6,14 +6,24 @@ html {
   box-sizing: inherit;
 }
 
+.name {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  color: #FFFFFF;
+  margin: 20px;
+  float: left;
+}
+
 nav ul {
   font-size: 18px;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #55D6AA;
 }
 
 nav ul li {
@@ -23,7 +33,7 @@ nav ul li {
 nav ul li a {
   position: relative;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #444;
   margin: 20px;
   padding-right: 10px;
   display: block;
@@ -35,14 +45,14 @@ nav ul li a:after {
   position: absolute;
   left: 0px;
   bottom: -10px;
-  background-color: #EB6841;
+  background-color: #FFFFFF;
   width: 0;
   height: 3px;
   transition: all 0.4s;
 }
 
 nav ul li a:hover {
-  color: #EB6841;
+  color: #FFFFFF;
 }
 
 nav ul li a:hover:after {
