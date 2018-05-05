@@ -13,6 +13,3 @@ export class HomeComponent implements OnInit {
   }
 
 }
-
-
-// 17:33
