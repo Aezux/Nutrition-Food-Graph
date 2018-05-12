@@ -5,21 +5,23 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { SignUpPageComponent } from './sign-up/sign-up-page/sign-up-page.component';
 import { HeaderComponent } from './header/header.component';
-import { LogInComponent } from './profile/log-in/log-in.component'
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FormsComponent } from './forms/forms.component';
+import { SignInComponent } from './forms/sign-in/sign-in.component'
+import { SignUpComponent } from './forms/sign-up/sign-up.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    SignUpComponent,
-    SignUpPageComponent,
     HeaderComponent,
-    LogInComponent
+    HomeComponent,
+    ProfileComponent,
+    FormsComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

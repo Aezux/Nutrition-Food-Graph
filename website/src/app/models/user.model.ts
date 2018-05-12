@@ -1,5 +1,5 @@
-export class User {
-    constructor(public name: string, public email: string, public weight: number) {
+// export class User {
+//     constructor(public name: string, public email: string, public weight: number) {
         
-    }
-}
+//     }
+// }
