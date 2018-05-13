@@ -1,34 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Home</title>
-</head>
 <body>
-  <div class="signup">
+  <div class="FORMFIELD">
     <div class="container">
-      <div class="signup-container-wrapper clearfix">
+      <div class="FORMFIELD-container-wrapper clearfix">
         <div class="tab-content">
-          <div class="tab-pane active" id="signup">
-            <form class="form-horizontal signup-form">
-  
-              <!-- Username -->
+          <div class="tab-pane active" id="FORMFIELD">
+            <!-- Form -->
+            <form class="form-horizontal FORMFIELD-form" novalidate (ngSubmit)="onFormSubmit(signupForm)" #signupForm="ngForm">
+              <!-- Email block -->
               <div class="form-group relative">
-                <input class="form-control input-lg" id="signup_username" placeholder="Email Address" required="" type="email">
+                <!-- <input type="text" class="form-control input-lg" id="signup_username" placeholder="Email Address" type="email" ng-model="user.email" ng-required="true"> -->
+                <input type="email" class="form-control input-lg" [ngModel]="user.email" name="email" #email="ngModel" id="inputEmail" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                 <i class="fa fa-user"></i>
+                <!-- Email error block -->
+                <div class="alert alert-info" *ngIf="email.invalid && email.touched">
+                  <div *ngIf="email.errors?.required">
+                    Email field can't be blank
+                  </div>
+                  <div *ngIf="email.errors?.pattern && email.touched">
+                    Not a valid email
+                  </div>
+                </div>
               </div>
-  
-              <!-- Password -->
+              <!-- Password block -->
               <div class="form-group relative">
-                <input class="form-control input-lg" id="signup_password" placeholder="Password" required="" type="password">
+                <!-- <input class="form-control input-lg" id="signup_password" placeholder="Password" type="password" ng-model="user.password" ng-required="true"> -->
+                <input type="password" class="form-control input-lg" [ngModel]="user.password" name="password" #userPassword="ngModel" id="inputPassword" placeholder="Password" minlength="8" required>
                 <i class="fa fa-lock"></i>
+                <!-- Password error block -->
+                <div class="alert alert-info" *ngIf="userPassword.invalid && userPassword.touched">
+                  <div *ngIf="userPassword.invalid">
+                    Password needs to be more than 8 characters
+                  </div>
+                </div>
               </div>
-  
-              <!-- Button -->
               <div class="form-group">
-                <button class="btn btn-lg btn-block" type="submit">Sign up</button>
+                <button type="submit" class="btn btn-success" [disabled]="!signupForm.form.valid"> Submit </button>
               </div>
-  
             </form>
           </div>
         </div>
@@ -36,4 +43,3 @@
     </div>
   </div>
 </body>
-</html>

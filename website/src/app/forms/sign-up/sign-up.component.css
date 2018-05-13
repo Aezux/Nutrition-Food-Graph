@@ -14,7 +14,7 @@ body {
 }
 
 /* Div tag that contains everything */
-.signup {
+.FORMFIELD {
     font-family: 'Varela', sans-serif;
     padding-top: 80px;
     font-size: 14px;
@@ -34,7 +34,7 @@ body {
 }
 
 /* The box that has everything in it */
-.signup-container-wrapper {
+.FORMFIELD-container-wrapper {
     border-top: 3.5px solid #5AAE9C;
     max-width: 400px;
     margin: 2% auto 5%;
@@ -47,18 +47,18 @@ body {
 }
 
 /* Icon color when you click on form */
-.signup input:focus + .fa{
+.FORMFIELD input:focus + .fa{
     color:#25a08d;
 }
 
 /* Form position */
-.signup-form .form-group {
+.FORMFIELD-form .form-group {
     margin-right: 0;
     margin-left: 0;
 }
 
 /* Form icons */
-.signup-form i {
+.FORMFIELD-form i {
     position: absolute;
     top: 0;
     left: 19px;
@@ -69,7 +69,7 @@ body {
 }
 
 /* Size and position of the input */
-.signup-form .input-lg {
+.FORMFIELD-form .input-lg {
     font-size: 16px;
     height: 52px;
     padding: 10px 25px;
@@ -77,9 +77,9 @@ body {
 }
 
 /* Color of input */
-.signup input[type="email"],
-.signup input[type="password"],
-.signup input:focus {
+.FORMFIELD input[type="email"],
+.FORMFIELD input[type="password"],
+.FORMFIELD input:focus {
     background-color: rgba(40, 52, 67, 0.75);
     border: 0px solid #4a525f;
     color: #eee;
@@ -87,7 +87,7 @@ body {
 }
 
 /* Click on input */
-.signup input:focus {
+.FORMFIELD input:focus {
     border-left: 45px solid #eee;
 }
 
@@ -122,5 +122,8 @@ select:-webkit-autofill {
     text-shadow:0 0 8px #fff;
     color: #FFF;
     outline:none;
-    cursor:pointer;
+}
+
+.alert {
+    margin-top: 10px;
 }
