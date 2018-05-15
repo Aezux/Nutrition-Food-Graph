@@ -3,8 +3,8 @@ A web application for CSC 360
 
 Progress so far:
 - [x] Home Page
-- [ ] Login/Signup
-- [ ] Tutorials
+- [x] Login/Signup
+- [x] Form Validation
+- [ ] Authentication
 - [ ] User Profile
-- [ ] Trackers
 - [ ] API's

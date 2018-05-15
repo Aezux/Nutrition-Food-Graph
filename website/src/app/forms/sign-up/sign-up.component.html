@@ -8,7 +8,6 @@
             <form class="form-horizontal FORMFIELD-form" novalidate (ngSubmit)="onFormSubmit(signupForm)" #signupForm="ngForm">
               <!-- Email block -->
               <div class="form-group relative">
-                <!-- <input type="text" class="form-control input-lg" id="signup_username" placeholder="Email Address" type="email" ng-model="user.email" ng-required="true"> -->
                 <input type="email" class="form-control input-lg" [ngModel]="user.email" name="email" #email="ngModel" id="inputEmail" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                 <i class="fa fa-user"></i>
                 <!-- Email error block -->
@@ -23,7 +22,6 @@
               </div>
               <!-- Password block -->
               <div class="form-group relative">
-                <!-- <input class="form-control input-lg" id="signup_password" placeholder="Password" type="password" ng-model="user.password" ng-required="true"> -->
                 <input type="password" class="form-control input-lg" [ngModel]="user.password" name="password" #userPassword="ngModel" id="inputPassword" placeholder="Password" minlength="8" required>
                 <i class="fa fa-lock"></i>
                 <!-- Password error block -->
