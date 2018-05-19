@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormsComponent } from './forms/forms.component';
 import { SignInComponent } from './forms/sign-in/sign-in.component'
 import { SignUpComponent } from './forms/sign-up/sign-up.component';
+import { UpdateComponent } from './update/update.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SignUpComponent } from './forms/sign-up/sign-up.component';
     ProfileComponent,
     FormsComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

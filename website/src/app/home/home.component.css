@@ -6,12 +6,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
 }
 
 .header {
-  height: 600px;
+  height: 60%;
+  width: 100%;
+  min-height: 600px;
   background: url(https://wallpapertag.com/wallpaper/full/d/9/0/290410-black-backgrounds-1920x1200-720p.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,15 +19,18 @@ body {
   text-align: center;
   font-size: 60px;
   text-transform: uppercase;
-  border-bottom: 2px solid #232323;
+  border-bottom: 4px solid #232323;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .header button {
   font-size: 40px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header p {
+  padding-top: 50px;
   position: relative;
   top: 10%;
   color: #5AAE9C;
@@ -40,20 +43,29 @@ body {
   clear: both;
 }
 
+.column p {
+  background: rgba(128, 128, 128, 0.6);
+}
+
 .column {
   float: left;
   padding: 50px;
-  height: 400px;
+  height: 40%;
+  min-height: 400px;
+  max-height: 400px;
+  word-wrap: break-word;
+  overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px 4px blue;
 }
 
 .left-col {
   width: 46%;
-  background: url(http://dailycaller.com/wp-content/uploads/2017/07/rsz_shutterstock_553502650-e1500297125933.jpg);
+  background: url(http://eceoffshore.com/eceoffshore_v2/wp-content/uploads/2013/12/Rampion_OSS.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 60%;
   border-top: 2px solid #232323;
-  border-right: 1px solid #232323;
+  border-right: 2px solid #232323;
 }
 
 .center-col {
@@ -63,18 +75,17 @@ body {
   background-size: cover;
   background-position: 44% 60%;
   border-top: 2px solid #232323;
-  border-left: 1px solid #232323;
-  border-right: 1px solid #232323;
+  border-left: 2px solid #232323;
+  border-right: 2px solid #232323;
 }
 
 .right-col {
   width: 27%;
-  background: url(https://xbrl.us/wp-content/uploads/2015/04/EDU-apple-books.jpg);
+  background: url(https://tradeposttees.com/wp-content/uploads/2017/11/Fight-Milk-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 37% 65%;
   border-top: 2px solid #232323;
-  border-left: 1px solid #232323;
+  border-left: 2px solid #232323;
 }
 
 .text-wrapper {

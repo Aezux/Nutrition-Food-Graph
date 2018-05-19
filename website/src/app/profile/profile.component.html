@@ -1,3 +1,67 @@
-<p>
-  profile works!
-</p>
+<div class="row-col">
+  <!-- Left column -->
+  <div class="column left-col">
+      <div class="profile">
+        <div class="profile-top">
+          <p>User Profile</p>
+        </div>
+        <!-- Profile Info -->
+        <div class="profile-bottom">
+          <p>Name:</p><hr>
+          <p>Weight:</p><hr>
+          <p>Height:</p><hr>
+          <p>Bio:</p><hr>
+          <button>update</button>
+        </div>
+        <!-- Map -->
+        <div class="map">
+          <p>THE MAP GOES HERE</p>
+        </div>
+      </div>
+  </div>
+  <!-- Right column -->
+  <div class="column right-col">
+    <!-- Graph -->
+    <div class="data-graph">
+      <h1>GRAPH GOES HERE</h1>
+    </div>
+    <!-- Workout and food trackers -->
+    <div class="tracker">
+      <div class="row-col">
+        <div class="tracker-column tracker-left">
+          <!-- Workout tracker -->
+          <div class="workout-tracker">
+            <form action="">
+              <select name="muscule">
+                <option value="chest">chest</option>
+                <option value="arms">arms</option>
+                <option value="back">back</option>
+                <option value="legs">legs</option>
+              </select>
+              <input id="reps" name="reps" type="text" placeholder="reps">
+              <input id="sets" name="sets" type="text" placeholder="sets">
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+        <div class="tracker-column tracker-right">
+          <!-- Food tracker -->
+          <div class="food-tracker">
+            <form action="">
+              <input id="food" name="food" type="text" placeholder="food">
+              <input id="calories" name="calories" type="text" placeholder="calories">
+              <input id="protien" name="protien" type="text" placeholder="protien">
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <!-- Food API -->
+  <div class="food-api">
+    <h1>Food API</h1>
+  </div>
+</footer>
