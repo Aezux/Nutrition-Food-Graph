@@ -11,7 +11,9 @@
           <p>Weight:</p><hr>
           <p>Height:</p><hr>
           <p>Bio:</p><hr>
-          <button>update</button>
+          <a routerLink="/update">
+            <button type="submit" class="btn btn-success">Update</button>
+          </a>
         </div>
         <!-- Map -->
         <div class="map">
@@ -40,7 +42,10 @@
               </select>
               <input id="reps" name="reps" type="text" placeholder="reps">
               <input id="sets" name="sets" type="text" placeholder="sets">
-              <input type="submit">
+              <br><br>
+              <a routerLink="/profile">
+                <button type="submit-workout" class="btn btn-success">Add Workout</button>
+              </a>
             </form>
           </div>
         </div>
@@ -51,7 +56,10 @@
               <input id="food" name="food" type="text" placeholder="food">
               <input id="calories" name="calories" type="text" placeholder="calories">
               <input id="protien" name="protien" type="text" placeholder="protien">
-              <input type="submit">
+              <br><br>
+              <a routerLink="/profile">
+                <button type="submit-food" class="btn btn-success">Add Food</button>
+              </a>
             </form>
           </div>
         </div>

@@ -12,6 +12,8 @@ import { FormsComponent } from './forms/forms.component';
 import { SignInComponent } from './forms/sign-in/sign-in.component'
 import { SignUpComponent } from './forms/sign-up/sign-up.component';
 import { UpdateComponent } from './update/update.component';
+import { AppRoutingModule } from './/app-routing.module';
+
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { UpdateComponent } from './update/update.component';
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
