@@ -1,14 +1,14 @@
 <nav>
   <ul>
     <div class="name"> Rockstar Programers </div>
-    <li>
-      <a routerLink="/home" routerLinkActive="true">Home</a>
-    </li>
-    <li>
-      <a routerLink="/signIn" routerLinkActive="true">Login</a>
-    </li>
-    <li>
-      <a routerLink="/signUp" routerLinkActive="true">Signup</a>
-    </li>
+    <div *ngIf="user == null; else templateUser">
+      <li> <a routerLink="/home" routerLinkActive="true">Home</a> </li>
+      <li> <a routerLink="/signIn" routerLinkActive="true">Login</a> </li>
+      <li> <a routerLink="/signUp" routerLinkActive="true">Signup</a> </li>
+    </div>
+    <ng-template #templateUser>
+      <li> <a routerLink="/home" routerLinkActive="true">Home</a> </li>
+      <li> <a routerLink="/profile" routerLinkActive="true">Profile</a> </li>
+    </ng-template>
   </ul>
 </nav>

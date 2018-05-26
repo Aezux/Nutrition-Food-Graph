@@ -58,13 +58,13 @@
 .map {
     height: 280px;
     background: gray;
-    color: white;
     text-align: center;
-    padding-top: 150px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .data-graph {
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 100%;
     height: 500px;
     border-top: 1px solid black;

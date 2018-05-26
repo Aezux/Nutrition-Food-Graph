@@ -17,7 +17,7 @@
         </div>
         <!-- Map -->
         <div class="map">
-          <p>THE MAP GOES HERE</p>
+          <app-map></app-map>
         </div>
       </div>
   </div>
@@ -25,7 +25,7 @@
   <div class="column right-col">
     <!-- Graph -->
     <div class="data-graph">
-      <h1>GRAPH GOES HERE</h1>
+      <app-graph></app-graph>
     </div>
     <!-- Workout and food trackers -->
     <div class="tracker">
@@ -40,6 +40,7 @@
                 <option value="back">back</option>
                 <option value="legs">legs</option>
               </select>
+              <input id="weight" name="weight" type="text" placeholder="weight">
               <input id="reps" name="reps" type="text" placeholder="reps">
               <input id="sets" name="sets" type="text" placeholder="sets">
               <br><br>
