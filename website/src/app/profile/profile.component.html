@@ -7,13 +7,10 @@
         </div>
         <!-- Profile Info -->
         <div class="profile-bottom">
-          <p>Name:</p><hr>
-          <p>Weight:</p><hr>
-          <p>Height:</p><hr>
-          <p>Bio:</p><hr>
-          <a routerLink="/update">
-            <button type="submit" class="btn btn-success">Update</button>
-          </a>
+          <p>Name: {{profile_name}} </p><hr>
+          <p>Weight: {{profile_weight}} </p><hr>
+          <p>Height: {{profile_height}} </p><hr>
+          <p>Email: {{profile_email}} </p><hr>
         </div>
         <!-- Map -->
         <div class="map">
@@ -33,18 +30,19 @@
         <div class="tracker-column tracker-left">
           <!-- Workout tracker -->
           <div class="workout-tracker">
-            <form action="">
+            <form>
               <select name="muscule">
                 <option value="chest">chest</option>
                 <option value="arms">arms</option>
                 <option value="back">back</option>
                 <option value="legs">legs</option>
               </select>
-              <input id="weight" name="weight" type="text" placeholder="weight">
-              <input id="reps" name="reps" type="text" placeholder="reps">
-              <input id="sets" name="sets" type="text" placeholder="sets">
+              <br>
+              <input id="weight" name="weight" type="text" placeholder="weight"> <br>
+              <input id="reps" name="reps" type="text" placeholder="reps"> <br>
+              <input id="sets" name="sets" type="text" placeholder="sets"> <br>
               <br><br>
-              <a routerLink="/profile">
+              <a routerLink="/profile" (click)="clicked()">
                 <button type="submit-workout" class="btn btn-success">Add Workout</button>
               </a>
             </form>

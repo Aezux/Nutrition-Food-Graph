@@ -2,7 +2,8 @@
 <html>
 <body>
   <div class="container">
-    <form class="form-horizontal">
+    <h1>Hello! Please enter your information to continue.</h1> <br>
+    <form class="form-horizontal" novalidate (ngSubmit)="onFormSubmit(signupForm)" #signupForm="ngForm">
       <fieldset>
         <!-- Name-->
         <div class="form-group">
@@ -12,7 +13,13 @@
               <div class="input-group-addon">
                 <i class="fa fa-user"></i>
               </div>
-              <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md">
+              <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md" [(ngModel)]="user_name" #name="ngModel" required>
+            </div>
+            <!-- Weight error block -->
+            <div class="alert alert-info" *ngIf="name.invalid && name.touched">
+              <div *ngIf="name.errors?.required">
+                Name field can't be blank
+              </div>
             </div>
           </div>
         </div>
@@ -24,7 +31,13 @@
               <div class="input-group-addon">
                 <i class="fas fa-weight"></i>
               </div>
-              <input id="Weight" name="Weight" type="text" placeholder="Weight" class="form-control input-md">
+              <input id="Weight" name="Weight" type="text" placeholder="Weight" class="form-control input-md" [(ngModel)]="user_weight" #weight="ngModel" required>
+            </div>
+            <!-- Weight error block -->
+            <div class="alert alert-info" *ngIf="weight.invalid && weight.touched">
+              <div *ngIf="weight.errors?.required">
+                Weight field can't be blank
+              </div>
             </div>
           </div>
         </div>
@@ -32,17 +45,43 @@
         <div class="form-group">
           <label class="col-md-4 control-label col-xs-12" for="Height">Height</label>
           <div class="col-md-2  col-xs-4">
-            <input id="Height" name="Height" type="text" placeholder="Feet" class="form-control input-md ">
+            <input id="Feet" name="Feet" type="text" placeholder="Feet" class="form-control input-md" [(ngModel)]="user_feet" #height_feet="ngModel" required>
+            <!-- Height-feet error block -->
+            <div class="alert alert-info" *ngIf="height_feet.invalid && height_feet.touched">
+              <div *ngIf="height_feet.errors?.required">
+                Feet field can't be blank
+              </div>
+            </div>
           </div>
           <div class="col-md-2 col-xs-4">
-            <input id="Height" name="Height" type="text" placeholder="Inches" class="form-control input-md ">
+            <input id="Inches" name="Inches" type="text" placeholder="Inches" class="form-control input-md" [(ngModel)]="user_inches" #height_inch="ngModel" required>
+            <!-- Height-inch error block -->
+            <div class="alert alert-info" *ngIf="height_inch.invalid && height_inch.touched">
+              <div *ngIf="height_inch.errors?.required">
+                Inch field can't be blank
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Textarea -->
+        <!-- email -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="BIO">BIO</label>
+          <label class="col-md-4 control-label" for="Email">Email</label>
           <div class="col-md-4">
-            <textarea class="form-control" rows="10" id="BIO" name="BIO"></textarea>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fas fa-at"></i>
+              </div>
+              <input id="Email" name="Email" type="text" placeholder="Email" class="form-control input-md" [(ngModel)]="user_email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </div>
+            <!-- Email error block -->
+            <div class="alert alert-info" *ngIf="email.invalid && email.touched">
+              <div *ngIf="email.errors?.required">
+                Email field can't be blank
+              </div>
+              <div *ngIf="email.errors?.pattern && email.touched">
+                Not a valid email
+              </div>
+            </div>
           </div>
         </div>
         <!-- Button -->
@@ -50,7 +89,7 @@
           <label class="col-md-4 control-label"></label>
           <div class="col-md-4">
             <a routerLink="/profile">
-              <button type="submit" class="btn btn-success"> Submit </button>
+              <button type="submit" class="btn btn-success" (click)="submit()" [disabled]="!signupForm.form.valid"> Go To Profile </button>
             </a>
           </div>
         </div>
