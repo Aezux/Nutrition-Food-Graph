@@ -4,7 +4,6 @@
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(#55D6AA, white);
 }
 
 /* Centers everything */
@@ -14,8 +13,7 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px #1D8D84;
+    color: #5AAE9C;
 }
 
 /* Button */

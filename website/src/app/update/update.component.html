@@ -3,7 +3,7 @@
 <body>
   <div class="container">
     <h1>Hello! Please enter your information to continue.</h1> <br>
-    <form class="form-horizontal" novalidate (ngSubmit)="onFormSubmit(signupForm)" #signupForm="ngForm">
+    <form class="form-horizontal" novalidate #updateForm="ngForm">
       <fieldset>
         <!-- Name-->
         <div class="form-group">
@@ -89,7 +89,7 @@
           <label class="col-md-4 control-label"></label>
           <div class="col-md-4">
             <a routerLink="/profile">
-              <button type="submit" class="btn btn-success" (click)="submit()" [disabled]="!signupForm.form.valid"> Go To Profile </button>
+              <button type="submit" class="btn btn-success" (click)="submit()" [disabled]="!updateForm.form.valid"> Go To Profile </button>
             </a>
           </div>
         </div>

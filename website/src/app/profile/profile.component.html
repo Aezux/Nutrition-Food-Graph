@@ -24,51 +24,11 @@
     <div class="data-graph">
       <app-graph></app-graph>
     </div>
-    <!-- Workout and food trackers -->
-    <div class="tracker">
-      <div class="row-col">
-        <div class="tracker-column tracker-left">
-          <!-- Workout tracker -->
-          <div class="workout-tracker">
-            <form>
-              <select name="muscule">
-                <option value="chest">chest</option>
-                <option value="arms">arms</option>
-                <option value="back">back</option>
-                <option value="legs">legs</option>
-              </select>
-              <br>
-              <input id="weight" name="weight" type="text" placeholder="weight"> <br>
-              <input id="reps" name="reps" type="text" placeholder="reps"> <br>
-              <input id="sets" name="sets" type="text" placeholder="sets"> <br>
-              <br><br>
-              <a routerLink="/profile" (click)="clicked()">
-                <button type="submit-workout" class="btn btn-success">Add Workout</button>
-              </a>
-            </form>
-          </div>
-        </div>
-        <div class="tracker-column tracker-right">
-          <!-- Food tracker -->
-          <div class="food-tracker">
-            <form action="">
-              <input id="food" name="food" type="text" placeholder="food">
-              <input id="calories" name="calories" type="text" placeholder="calories">
-              <input id="protien" name="protien" type="text" placeholder="protien">
-              <br><br>
-              <a routerLink="/profile">
-                <button type="submit-food" class="btn btn-success">Add Food</button>
-              </a>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 <footer>
-  <!-- Food API -->
-  <div class="food-api">
-    <h1>Food API</h1>
+  <!-- Footer -->
+  <div class="update-policy">
+    <h1>We have updated our privacy policy</h1>
   </div>
 </footer>
