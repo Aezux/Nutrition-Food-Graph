@@ -22,9 +22,9 @@ var configuration = {
 var params = {
   timeout: 5,
   ca: '',
-  tenant: 'my-super-tenant',
+  tenant: 'csc360-webapps',
   url: 'https://sandbox.it.auth0.com',
-  token: '<webtask-token>'
+  token: 'wt-771d5396b03b50c522b723817997cce6-0'
 };
 
 
